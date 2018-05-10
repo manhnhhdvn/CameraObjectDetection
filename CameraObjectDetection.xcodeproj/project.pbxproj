@@ -14,6 +14,7 @@
 		652D80C920A3EC6400A5CDD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D80C720A3EC6400A5CDD8 /* LaunchScreen.storyboard */; };
 		652D80D420A3EC6400A5CDD8 /* CameraObjectDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D80D320A3EC6400A5CDD8 /* CameraObjectDetectionTests.swift */; };
 		652D80DF20A3EC6400A5CDD8 /* CameraObjectDetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D80DE20A3EC6400A5CDD8 /* CameraObjectDetectionUITests.swift */; };
+		652D80F620A41A7A00A5CDD8 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 652D80F520A41A7A00A5CDD8 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		652D80DA20A3EC6400A5CDD8 /* CameraObjectDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraObjectDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		652D80DE20A3EC6400A5CDD8 /* CameraObjectDetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraObjectDetectionUITests.swift; sourceTree = "<group>"; };
 		652D80E020A3EC6400A5CDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652D80F520A41A7A00A5CDD8 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		652D80B220A3EC6100A5CDD8 = {
 			isa = PBXGroup;
 			children = (
+				652D80EC20A4117C00A5CDD8 /* AppleModels */,
 				652D80BD20A3EC6100A5CDD8 /* CameraObjectDetection */,
 				652D80D220A3EC6400A5CDD8 /* CameraObjectDetectionTests */,
 				652D80DD20A3EC6400A5CDD8 /* CameraObjectDetectionUITests */,
@@ -123,6 +126,14 @@
 				652D80E020A3EC6400A5CDD8 /* Info.plist */,
 			);
 			path = CameraObjectDetectionUITests;
+			sourceTree = "<group>";
+		};
+		652D80EC20A4117C00A5CDD8 /* AppleModels */ = {
+			isa = PBXGroup;
+			children = (
+				652D80F520A41A7A00A5CDD8 /* Resnet50.mlmodel */,
+			);
+			path = AppleModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				652D80C120A3EC6100A5CDD8 /* ViewController.swift in Sources */,
+				652D80F620A41A7A00A5CDD8 /* Resnet50.mlmodel in Sources */,
 				652D80BF20A3EC6100A5CDD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Swift;
 				DEVELOPMENT_TEAM = S7T268ZLN3;
 				INFOPLIST_FILE = CameraObjectDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Swift;
 				DEVELOPMENT_TEAM = S7T268ZLN3;
 				INFOPLIST_FILE = CameraObjectDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
